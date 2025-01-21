@@ -1,0 +1,39 @@
+body{
+    font-family: arial;
+}
+
+.js-input-element, .js-date-input-element{
+    font-size: 15px;
+    padding: 6px;
+}
+
+.add-button, .delete-button{
+    border: none;
+    background-color: green;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.delete-button{
+    background-color: rgb(194, 5, 5);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.js-todo-list, .todo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+}
+
+.todo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+    /*
+    用align-items: center;后，add button会上下压缩以向左对齐
+    为了不让add压缩，手动改回stretch
+    */
+}
