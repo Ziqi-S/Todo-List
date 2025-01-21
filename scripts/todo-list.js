@@ -34,6 +34,7 @@ function showTodo(){
                 
                 <button class="delete-button" onclick="
                     localTodoList.splice(${i}, 1);
+                    localStorage.setItem('TodoList', JSON.stringify(localTodoList));
                     showTodo();
                 ">Delete</button>
             `;//generating the HTML
